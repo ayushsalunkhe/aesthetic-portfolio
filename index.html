@@ -1619,6 +1619,12 @@ img.shot {
   #cur { display: none !important; }
 }
 </style>
+
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Ayush Salunkhe">
+
 </head>
 <body>
 
@@ -2931,5 +2937,16 @@ console.log(
   'font-family: monospace; font-size: 12px; font-weight: bold; color: #9B7940;'
 );
 </script>
+
+<script>
+/* Offline-first portfolio: cache the complete site shell after first visit. */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js', { scope: './' })
+      .catch(err => console.warn('Offline cache unavailable:', err));
+  });
+}
+</script>
+
 </body>
 </html>
