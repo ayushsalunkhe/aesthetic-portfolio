@@ -1,0 +1,11 @@
+{
+  "name": "Ayush Salunkhe \u2014 Software Engineer & Builder",
+  "short_name": "Ayush Salunkhe",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F7F3ED",
+  "theme_color": "#F7F3ED",
+  "description": "Ayush Salunkhe's portfolio.",
+  "icons": []
+}
